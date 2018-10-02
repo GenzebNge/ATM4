@@ -1,0 +1,49 @@
+
+DEFINE accountDB = [2018102, 2018103, 2018104]
+DEFINE PINDB = [123,231,321]
+DEFINE currenBalance = 900,000.00
+DEFINE userName;
+
+
+PRINT "Emnter the account number"
+INPUT userAccountNumber
+PRINT "Enter your PIN number"
+IF userAccount = accountNumber in DB && PIN != PIN in PINDB
+
+      PRINT  "select services from services"
+
+         IF serviceSelected = withdrawMoney
+             PRINT "How much do you want to withdrow?"
+         INPUT withdrowAmount;
+         currentBalance = currentBalance - withdrawMoney
+             PRINT currentBalacne;
+
+             IF WithdrawAmount < currenBalance
+                 PRINT " Take your mponey"
+             ELSE
+                PRINT "you have insefficent fund"
+
+         ELSE IF serviceSelected = depositMoney
+            PRINT "Enter the amount you want to deposit"
+         INPUT depositAmount
+         currentBalance = currentBalance + depositAmount
+         PRITN currentBalance
+
+         ELSE IF  serviceSelected = checkBalance
+            PRINT currentBalance
+          ELSE
+            PRINT "select other services"
+
+ ELSE
+  while(cout <=3)
+  PRINT "Enter An other account"
+  INPUT userAccount;
+  PRINT "Enter you PIN"
+  userAccount = accountNumber in DB && PIN in PINDB
+  END WHILE
+
+END IF
+
+
+
+
